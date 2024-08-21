@@ -1,12 +1,12 @@
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
-    gap: 10px; /* Espacio entre las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #ffffff;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .gallery-item {
@@ -71,5 +71,15 @@
         height: 200px;
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
         object-fit: cover;
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1440px) {
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+        gap: 5px; /* Espacio entre las imágenes */
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

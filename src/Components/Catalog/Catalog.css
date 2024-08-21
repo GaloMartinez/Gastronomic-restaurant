@@ -16,7 +16,6 @@
     text-transform: capitalize;
    text-align: center;
    font-size: 36px;
-  
    font-weight: 600;
 }
 .hr-title {
@@ -28,9 +27,9 @@
 .catalog-grid {
     background-color: #fff;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards por fila */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste automático de columnas */
     gap: 40px;
-    padding: 20px 20%; /* 20px padding arriba y abajo, 20% padding a los lados */
+    padding: 20px 10%; /* 20px padding arriba y abajo, 10% padding a los lados */
 }
 
 .product-card {
@@ -38,7 +37,9 @@
     border-radius: 0.25rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 650px; /* Ajusta este valor al ancho deseado */
+    margin: 0 auto; /* Centra las tarjetas dentro de su columna */
 }
 
 .product-card:hover {
@@ -104,25 +105,36 @@
        
         font-weight: 600;
      }
-     
-    .catalog-grid {
-        background-color: #fff;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* 3 cards por fila */
-        gap: 40px;
-        padding: 10px 10%; /* 20px padding arriba y abajo, 20% padding a los lados */
-    }
-    .product-card p {
+     .product-card p {
         padding-top: 15px;
         padding-right: 25px;
         padding-left: 25px;
         padding-bottom: 15px;
         text-align: center;
-        height: 70px;
+        height: 90px;
         font-family: 'Montserrat', sans-serif; /* Aplicando la fuente Montserrat */
         letter-spacing: 1px; /* Añade un poco de espaciado entre letras para mayor claridad */
         text-transform: capitalize;
-        font-size: 13px;
+        font-size: 16px;
+    }
+    
+     
+     .catalog-grid {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste automático de columnas */
+        gap: 40px;
+        padding: 20px 10%; /* 20px padding arriba y abajo, 10% padding a los lados */
+    }
+    
+    .product-card {
+        background-color: #fff;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 300px; /* Ajusta este valor al ancho deseado */
+        margin: 0 auto; /* Centra las tarjetas dentro de su columna */
     }
     .product-image {
         width: 100%;
@@ -205,12 +217,22 @@
         font-weight: 600;
      }
      
-    .catalog-grid {
+     .catalog-grid {
         background-color: #fff;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 3 cards por fila */
         gap: 10px;
         padding: 10px 10%; /* 20px padding arriba y abajo, 20% padding a los lados */
+    }
+    
+    .product-card {
+        background-color: #fff;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 350px; /* Ajusta este valor al ancho deseado */
+        margin: 0 auto; /* Centra las tarjetas dentro de su columna */
     }
     .product-card p {
         padding-top: 15px;
@@ -231,5 +253,25 @@
         border-top-left-radius: 0.25rem; /* Aplica bordes redondeados en la imagen */
         border-top-right-radius: 0.25rem;
         
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1440px) {
+    .catalog-grid {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste automático de columnas */
+        gap: 40px;
+        padding: 20px 10%; /* 20px padding arriba y abajo, 10% padding a los lados */
+    }
+    
+    .product-card {
+        background-color: #fff;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 350px; /* Ajusta este valor al ancho deseado */
+        margin: 0 auto; /* Centra las tarjetas dentro de su columna */
     }
 }
