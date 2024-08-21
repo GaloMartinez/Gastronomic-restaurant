@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
-
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.querySelector('.navbar-gastronomic');
@@ -14,7 +15,6 @@ const Navbar = () => {
                 navbar.style.backdropFilter = 'blur(7px)';
                 buttons.forEach(button => {
                     button.style.backgroundColor = 'rgba(0, 0, 0, 0.0)'; // Color negro transparente
-                    navbar.style.backdropFilter = 'blur(7px)';
                 });
             } else {
                 navbar.style.backgroundColor = 'rgba(65, 10, 10, 1)'; // Color inicial
@@ -30,13 +30,23 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <nav className='navbar-gastronomic'>
-           <div className='navbar-group-gastronomic'>
-           <Link to="/" className='buttons-navbar-gastronomic'><span>Bienvenido</span></Link>
-                <Link to="/catalog" className='buttons-navbar-gastronomic'><span>Catálogo</span></Link>
-                <Link to="/contact" className='buttons-navbar-gastronomic'><span>Contacto</span></Link>
-               </div>
+            <div className='navbar-group-gastronomic'>
+                <button className='hamburger' onClick={toggleMenu}>
+                    ☰
+                </button>
+                <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+                    <Link to="/" className='buttons-navbar-gastronomic'><span>Bienvenido</span></Link>
+                    <Link to="/catalog" className='buttons-navbar-gastronomic'><span>Catálogo</span></Link>
+                    <Link to="/contact" className='buttons-navbar-gastronomic'><span>Contacto</span></Link>
+                </div>
+            </div>
         </nav>
     );
 };
