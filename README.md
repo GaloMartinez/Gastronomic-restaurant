@@ -53,7 +53,7 @@
 - **Node.js**: Necesario para ejecutar la aplicación localmente.
 - **npm**: Administrador de paquetes incluido con Node.js.
 
-### Clonación del Repositorio
+## Clonación del Repositorio
 
 
 1. Clona el repositorio desde GitHub:
@@ -64,14 +64,14 @@
    ```bash
    cd gastronomic-restaurant
 
-### Instalación de dependencias
+## Instalación de dependencias
 
 
 1. Instala las dependencias necesarias:
    ```bash
    npm install
 
-### Ejecución del Proyecto
+## Ejecución del Proyecto
 
 
 1. Inicia el servidor de desarrollo:
@@ -81,7 +81,7 @@
 2. Abre http://localhost:3000 en tu navegador para ver la aplicación en funcionamiento.
 
 
-### Despliegue
+## Despliegue
 
 El proyecto puede ser desplegado utilizando GitHub Pages:
 
@@ -94,7 +94,7 @@ npm run deploy
 
 2. La aplicación estará disponible en GitHub Pages bajo la URL configurada en el repositorio.
 
-### Contribuir
+## Contribuir
 
 Si deseas contribuir al proyecto:
 
@@ -131,8 +131,8 @@ git push origin feature/nueva-caracteristica
 - Ve a la página de tu fork en GitHub y haz clic en el botón "New Pull Request" para solicitar que tus cambios sean integrados en el proyecto original.
 
 
-### Licencia
+## Licencia
 Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo **LICENSE** para más detalles.
 
-### Autor
+## Autor
 Galo Martinez - GitHub
