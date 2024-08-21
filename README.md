@@ -1,70 +1,138 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Gastronomic Restaurant
 
-## Available Scripts
+**Gastronomic Restaurant** es una aplicación web creada para un restaurante especializado en pizzas italianas. Esta aplicación presenta un catálogo de productos de manera elegante y responsiva, permitiendo a los clientes explorar las opciones del menú y ponerse en contacto con el restaurante a través de un formulario.
 
-In the project directory, you can run:
+## Características
 
-### `npm start`
+- **Navegación fluida y responsiva:** La aplicación cuenta con un menú de navegación que se adapta a diferentes tamaños de pantalla, convirtiéndose en un menú hamburguesa en dispositivos móviles.
+- **Catálogo de productos:** Los productos del restaurante se gestionan en Firebase y se muestran en una grilla responsiva. Las tarjetas de productos se ajustan a diferentes resoluciones para garantizar una presentación limpia y accesible.
+- **Formulario de contacto:** Los clientes pueden enviar mensajes directamente al restaurante a través de un formulario de contacto conectado a un correo electrónico mediante EmailJS.
+- **Diseño moderno:** Utilizando CSS y algo de Bootstrap, la aplicación tiene un diseño atractivo y profesional que se adapta bien a dispositivos móviles y de escritorio.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React:** Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas.
+- **CSS & Bootstrap:** Para el diseño y la estilización de la aplicación, logrando un aspecto limpio y moderno.
+- **Firebase:** Utilizado como base de datos para almacenar y recuperar productos del catálogo de manera dinámica.
+- **EmailJS:** Servicio utilizado para conectar el formulario de contacto con una dirección de correo electrónico.
+- **Responsive Design:** La aplicación está diseñada para adaptarse a cualquier dispositivo, asegurando una experiencia de usuario coherente en diferentes tamaños de pantalla.
 
-### `npm test`
+## Uso
+1. **Navegación por la página:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- La barra de navegación en la parte superior de la página te permite acceder fácilmente a las diferentes secciones del sitio: Bienvenido, Catálogo y Contacto.
+- En dispositivos móviles, la barra de navegación se convierte en un menú hamburguesa, que puedes abrir para ver y seleccionar las opciones.
 
-### `npm run build`
+2. **Explorar el Catálogo de Productos:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- La sección del catálogo te muestra una lista de productos (pizzas) del restaurante en un formato de grilla. Cada tarjeta de producto incluye una imagen, una breve descripción y el precio.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Puedes ver más detalles de cada pizza simplemente explorando las tarjetas en la grilla. Las tarjetas están organizadas para que sean fáciles de navegar en cualquier tamaño de pantalla.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Formulario de Contacto:**
 
-### `npm run eject`
+- Si deseas ponerte en contacto con el restaurante, navega a la sección de contacto.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Rellena tu nombre, correo electrónico y mensaje en el formulario de contacto.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Haz clic en "Enviar" para enviar tu mensaje. El formulario está conectado a un servicio de correo (EmailJS) que envía tu mensaje directamente al restaurante.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Recibirás una confirmación en pantalla una vez que tu mensaje haya sido enviado con éxito.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Responsividad:**
 
-## Learn More
+- La aplicación está diseñada para ser completamente responsiva, lo que significa que se adapta y funciona bien en dispositivos de escritorio, tabletas y móviles.
+ 
+- Disfrutarás de una experiencia de usuario fluida, sin importar el dispositivo que utilices.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Instalación
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerrequisitos
 
-### Code Splitting
+- **Node.js**: Necesario para ejecutar la aplicación localmente.
+- **npm**: Administrador de paquetes incluido con Node.js.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Clonación del Repositorio
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clona el repositorio desde GitHub:
+   ```bash
+   git clone https://github.com/GaloMartinez/gastronomic-restaurant.git
+   
+2. Navega al directorio del proyecto:
+   ```bash
+   cd gastronomic-restaurant
 
-### Making a Progressive Web App
+### Instalación de dependencias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+1. Instala las dependencias necesarias:
+   ```bash
+   npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Ejecución del Proyecto
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Inicia el servidor de desarrollo:
+   ```bash
+   npm start
 
-### `npm run build` fails to minify
+2. Abre http://localhost:3000 en tu navegador para ver la aplicación en funcionamiento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Despliegue
+
+El proyecto puede ser desplegado utilizando GitHub Pages:
+
+1. Ejecuta el siguiente comando para desplegar.
+
+```bash
+npm run deploy
+
+```
+
+2. La aplicación estará disponible en GitHub Pages bajo la URL configurada en el repositorio.
+
+### Contribuir
+
+Si deseas contribuir al proyecto:
+
+1. Haz un fork del repositorio:
+
+- Haz clic en el botón "Fork" en la parte superior derecha de la página del repositorio en GitHub.
+
+2. Crea una nueva rama
+
+- En tu máquina local, crea una nueva rama para tus cambios
+```
+ git checkout -b feature/nueva-caracteristica
+
+ ```
+
+3. Realiza tus cambios y haz commit.
+- Realiza los cambios que desees en tu copia del proyecto y guarda los archivos.
+- Luego, haz commit de tus cambios
+```
+
+git commit -m "Descripción de la nueva característica"
+
+```
+
+4. Sube tus cambios a la rama 
+- Sube los cambios a tu fork en GitHub
+```
+git push origin feature/nueva-caracteristica
+```
+
+
+
+5. Abre un Pull Request en GitHub.
+- Ve a la página de tu fork en GitHub y haz clic en el botón "New Pull Request" para solicitar que tus cambios sean integrados en el proyecto original.
+
+
+### Licencia
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo **LICENSE** para más detalles.
+
+### Autor
+Galo Martinez - GitHub
