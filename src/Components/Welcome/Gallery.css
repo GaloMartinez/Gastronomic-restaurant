@@ -1,0 +1,28 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    gap: 10px; /* Espacio entre las imágenes */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden; /* Asegura que el contenido que se sale de los bordes no sea visible */
+  
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
+    object-fit: cover;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade una sombra en hover */
+}

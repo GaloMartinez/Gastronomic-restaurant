@@ -1,0 +1,10 @@
+.footer-gastronomic{
+    background-color: rgb(65, 10, 10);
+    height: 100px;
+    color: antiquewhite;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

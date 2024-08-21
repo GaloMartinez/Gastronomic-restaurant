@@ -1,0 +1,132 @@
+.contact-banner-gastronomic{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+.contact-contain-gastronomic{
+   
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    /* margin-bottom: 50px; */
+}
+.hr-title {
+   
+    width: 80px;
+    border-top: 2px solid rgb(165, 3, 3);
+}
+.contact-title-gastronomic{
+    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif; /* Aplicando la fuente Montserrat */
+    letter-spacing: 1px; /* Añade un poco de espaciado entre letras para mayor claridad */
+    text-transform: capitalize;
+   text-align: center;
+   font-size: 36px;
+ 
+   font-weight: 600;
+}
+.contact-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: #ffffff;
+    height: 100vh;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+}
+.contact-container-gastronomic{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.restaurant-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start ;
+    flex: 1;
+    /* padding: 20px; */
+    /* margin-right: 40px; */
+  
+
+}
+
+.restaurant-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.restaurant-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    width: 100%;
+}
+
+.contact-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(94, 14, 14);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 150px;
+}
+
+.contact-form button:hover {
+    background-color: rgb(59, 2, 2);
+}
+
+.form-result {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+}
