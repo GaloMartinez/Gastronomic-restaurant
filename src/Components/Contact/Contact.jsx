@@ -21,7 +21,7 @@ const Contact = () => {
                 "service_ouqnegv",
                 "template_kzfga72",
                 event.target,
-                "5UZ6TnRqx2Ot7bry1"
+                "OpnB1q9SZaAPuGkBQ"
             )
             .then(
                 (result) => {
@@ -58,14 +58,14 @@ const Contact = () => {
                     <form onSubmit={handleConfirm} className="contact-form">
                         <input
                             type="text"
-                            name="name"
+                            name="from_name"
                             placeholder="Nombre"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
                         <input
                             type="email"
-                            name="email"
+                            name="from_email"
                             placeholder="Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
