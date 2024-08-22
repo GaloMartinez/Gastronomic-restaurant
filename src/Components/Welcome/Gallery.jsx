@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import db from '../../firebase'; // Asegúrate de que la ruta sea correcta a tu archivo firebase.js
+import db from '../../firebase';
 import './Gallery.css';
 
 const Gallery = () => {

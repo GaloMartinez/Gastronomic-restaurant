@@ -9,17 +9,17 @@ const Navbar = () => {
         const handleScroll = () => {
             const navbar = document.querySelector('.navbar-gastronomic');
             const buttons = document.querySelectorAll('.buttons-navbar-gastronomic');
-            
+
             if (window.scrollY > 50) {
-                navbar.style.backgroundColor = 'rgba(64, 64, 64, 0.6)'; // Color negro transparente
+                navbar.style.backgroundColor = 'rgba(64, 64, 64, 0.6)';
                 navbar.style.backdropFilter = 'blur(7px)';
                 buttons.forEach(button => {
-                    button.style.backgroundColor = 'rgba(0, 0, 0, 0.0)'; // Color negro transparente
+                    button.style.backgroundColor = 'rgba(0, 0, 0, 0.0)';
                 });
             } else {
-                navbar.style.backgroundColor = 'rgba(65, 10, 10, 1)'; // Color inicial
+                navbar.style.backgroundColor = 'rgba(65, 10, 10, 1)';
                 buttons.forEach(button => {
-                    button.style.backgroundColor = 'rgba(65, 10, 10, 0.0)'; // Color inicial
+                    button.style.backgroundColor = 'rgba(65, 10, 10, 0.0)';
                 });
             }
         };

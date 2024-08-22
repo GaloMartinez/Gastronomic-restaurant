@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import db from '../../firebase'; // Importa tu configuración de Firebase
+import db from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore';
-import './Catalog.css'; // Importa los estilos de la grilla
+import './Catalog.css';
 
 const Catalog = () => {
     const [products, setProducts] = useState([]);
@@ -30,7 +30,7 @@ const Catalog = () => {
                     <div key={product.id} className="product-card">
                         <img src={product.imageUrl} alt={product.name} className="product-image" />
                         <h3>{product.name}</h3>
-                        <hr className='hr-title-card'/>
+                        <hr className='hr-title-card' />
                         <p>{product.description}</p>
                         <p className="price">${product.price}</p>
                     </div>

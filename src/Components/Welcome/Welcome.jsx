@@ -11,7 +11,7 @@ const Welcome = () => {
                 <h1>¡Bienvenidos a La Bella Pizza Italiana!</h1>
                 <p>Explora nuestro catálogo de productos y contáctanos para más información.</p>
                 <div className='welcome-group-buttons'>
-                <Link to="/catalog"> <button className='welcome-buttons'>
+                    <Link to="/catalog"> <button className='welcome-buttons'>
                         Catalogo
                     </button></Link>
                     <Link to="/contact"> <button className='welcome-buttons'>

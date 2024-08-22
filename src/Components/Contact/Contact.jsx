@@ -42,8 +42,8 @@ const Contact = () => {
         <div className="contact-container">
             <img src="/img/banner-gastronomic.jpg" className='contact-banner-gastronomic' alt="Pizza Background" />
             <div className='contact-contain-gastronomic'>
-            <div className='contact-title-gastronomic'>Contacto</div>
-            <hr className='hr-title' />
+                <div className='contact-title-gastronomic'>Contacto</div>
+                <hr className='hr-title' />
             </div>
             <div className='contact-container-gastronomic'>
                 <div className="restaurant-info ">

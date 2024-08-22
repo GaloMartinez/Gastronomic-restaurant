@@ -1,16 +1,15 @@
-/* src/components/Navbar.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 .navbar-gastronomic {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(65, 10, 10, 1); /* Usar rgba para el color */
+    background-color: rgba(65, 10, 10, 1);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    transition: background-color 0.3s ease; /* Transición suave para la opacidad */
+    transition: background-color 0.3s ease;
     backdrop-filter: none;
 }
 
@@ -20,14 +19,14 @@
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
-    background-color: rgba(31, 22, 22, 0); /* Usar rgba para el color */
+    background-color: rgba(31, 22, 22, 0);
     font-weight: 600;
     text-decoration: none;
     color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease, background-color 0.3s ease;
     backdrop-filter: none;
     display: inline-block;
 }
@@ -45,7 +44,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%; /* Asegura que el grupo de navegación ocupe todo el ancho */
+    width: 100%;
 }
 
 .hamburger {
@@ -57,20 +56,21 @@
     cursor: pointer;
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .navbar-gastronomic {
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: rgba(65, 10, 10, 1); /* Usar rgba para el color */
+        background-color: rgba(65, 10, 10, 1);
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 1000;
-        transition: background-color 0.3s ease; /* Transición suave para la opacidad */
+        transition: background-color 0.3s ease;
         backdrop-filter: none;
     }
+
     .navbar-group-gastronomic {
         justify-content: space-between;
         padding: 0 20px;
