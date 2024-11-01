@@ -1,0 +1,3 @@
+[submodule "gastronomic-restaurant"]
+	path = gastronomic-restaurant
+	url = https://github.com/GaloMartinez/gastronomic-restaurant.git
